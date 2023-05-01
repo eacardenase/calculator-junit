@@ -41,4 +41,11 @@ public class CalculatorTest {
 
         assertEquals(-2, result, "Was expecting sum of 0");
     }
+
+    @Test
+    public void canAddMaxIntPlusOne() {
+        int result = calculator.add(Integer.MAX_VALUE, 1);
+
+        assertEquals(Integer.MAX_VALUE + 1L, result);
+    }
 }
